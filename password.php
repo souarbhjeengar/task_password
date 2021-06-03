@@ -22,8 +22,8 @@ $l=$_POST['password'];
 function randomPassword() {
     glob($l=$_POST['password']);
     $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-    $pass = array(); //remember to declare $pass as an array
-    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+    $pass = array(); 
+    $alphaLength = strlen($alphabet) - 1; 
     for ($i = 0; $i < $l; $i++) {
         $n = rand(0, $alphaLength);
         $pass[] = $alphabet[$n];
